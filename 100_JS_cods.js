@@ -182,16 +182,130 @@
 // Input:  "madam" 
 // Output:  Palindrome 
 
-let input = "12321"
+// let input = "12321"
 
 
-function isPalindrome(str){
-    if(str == str.split('').reverse().join('')) return true
-    else return false
-}
+// function isPalindrome(str){
+//     if(str == str.split('').reverse().join('')) return true
+//     else return false
+// }
 
-console.log("Input : ",input)
-console.log("Output : ",isPalindrome(input))
+// console.log("Input : ",input)
+// console.log("Output : ",isPalindrome(input))
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 12.Check if String or Number is Palindrome Using Half-Length Comparison 
+// Input:  "12321" 
+// Output:  Palindrome 
+
+// let input = "123321"
+
+// //with inbuit methods
+// function isPalindrome(str){
+//     if(str.endsWith(str.substring(0, Math.floor(str.length / 2)).split('').reverse().join(''))) return true
+//     else return false
+// }
+
+
+
+// //with for loop
+// function isPalindrome(str){
+//     for (let index = 0; index < Math.floor(str.length / 2); index++) {
+//         if(str.charAt(index) == str.charAt(str.length - index - 1)) continue
+//         else return false    
+//     }
+//     return true
+// }
+
+
+
+// with 2 pointer
+// function isPalindrome(str) {
+//   for (let i = 0, k = str.length - 1; i < str.length / 2; i++, k--) {
+//     if (str.charAt(i) == str.charAt(k)) continue;
+//     else return false
+//   }
+//   return true;
+// }
+
+// console.log("Input : ",input)
+// console.log("Output : ",isPalindrome(input))
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
 
+// 13. Find Longest Word from a String 
+// Input:  "supriya is a masooooom good girl" 
+// Output:  "masooooom" 
+
+// let input = "supriya is a masooooom good girl"
+
+//using reducer
+// const output = input.split(' ').reduce((acc, val)=> {
+//     console.log(acc, val)
+//     if(acc.length < val.length) return val
+//     else return acc
+// })
+
+//using for loop
+// var output =''
+// for (const val of input.split(' ')) {
+//     if(output.length < val.length) output = val
+// }
+
+
+// console.log("Input : ",input)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 14.Find Longest Word Using Sort 
+// Input:  "Priya is a good girl" 
+// Output:  "Priya" 
+// const input = "Priya is a good girl"  
+
+// const output = input.split(' ').sort((a,b)=>{
+//         if(b.length > a.length) return -1
+//         else if (b.length < a.length) return 1
+//         else return 0
+//     })
+
+// console.log("Input : ",input)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 16.Find Longest Common Prefix from Array of Strings 
+// Input:  ["go", "google", "gosh"] 
+// Output:  "go" 
+
+
+
+
+// console.log("Input : ",input)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 17.Find Vowels and Their Count in a String 
+// Input:  "priya" 
+// Output:  i, a 
+// Count:  2 
+
+// const input = "priya"
+// const vowels = 'AEIOUaeiou'
+
+// var output = 0
+
+// for(let char of input){
+//     if(vowels.includes(char)) output++
+// }
+
+// console.log("Input : ", input)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// console.log("Input : ", input)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
