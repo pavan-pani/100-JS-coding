@@ -92,11 +92,106 @@
 // Input:  5 
 // Output:  The factorial is 120
 
-const input = 5
-var output = 1
-for(let i=1;i<=input;i++) output*=i
+// const input = 5
+// var output = 1
+// for(let i=1;i<=input;i++) output*=i
 
-console.log("Input : ", input)
-console.log("The factorial is : ",output)
+// console.log("Input : ", input)
+// console.log("The factorial is : ",output)
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
+// 8. Check if Two Strings are Anagram 
+// Input:  "Army", "Mary" 
+// Output:  True 
+
+// const str1 = "Army"
+// const str2 = "Mary" 
+
+// console.log("Input : ", str1, str2)
+
+// ///using without inbuilt funation - O(n)
+// function isAnagram(str1, str2) {
+//   if (str1.length != str2.length) {
+//     return false;
+//   }
+//   const set = new Set(str1.toLowerCase());
+//   for (i of str2.toLowerCase()) {
+//     if (set.has(i)) {
+//       continue;
+//     } else return false;
+//   }
+//   return true;
+// }
+
+// ///using inbuilt funation - O(n log(n))
+// function isAnagram(str1, str2) {
+//   if (str1.length != str2.length) {
+//     return false;
+//   } else {
+//     if (
+//       str1.toLowerCase().split("").sort().join("") ==
+//       str2.toLowerCase().split("").sort().join("")
+//     )
+//       return true;
+//     else return false;
+//   }
+// }
+
+// console.log(isAnagram(str1, str2))
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 9.Swapping of Two Numbers Using Third Variable 
+// Input:  a = 10, b = 20 
+// Output:  20, 10 
+
+// let a=10
+// let b=20
+// console.log("Input : ",a, b)
+
+// let temp=a
+// a=b
+// b=temp
+
+// console.log("Output : ",a, b)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 10. Swapping of Two Numbers Without Using Third Variable 
+// Input:  a = 10, b = 20 
+// Output:  20, 10 
+
+// var [a,b] = [10,20]
+// console.log("Input : ",a, b)
+
+// // using destracting
+// // var [a,b]=[b,a]
+
+// //using add & sub
+// a = a+b //30
+// b = a-b // 30-20 =10
+// a = a-b //30-10 = 20
+
+// console.log("Output : ",a, b)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 11.Check if String or Number is Palindrome Using Reverse 
+// Input:  "madam" 
+// Output:  Palindrome 
+
+let input = "12321"
+
+
+function isPalindrome(str){
+    if(str == str.split('').reverse().join('')) return true
+    else return false
+}
+
+console.log("Input : ",input)
+console.log("Output : ",isPalindrome(input))
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
