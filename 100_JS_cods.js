@@ -278,11 +278,71 @@
 // Input:  ["go", "google", "gosh"] 
 // Output:  "go" 
 
+// const input = [ "google", "gosh", 'google']
 
+// var countChar = {}
+// var tempChar = ''
+// for (let i = 0; i < input.length; i++) {
+//     for (let j = 0; j < input[i].length; j++) {
+//         tempChar += input[i].charAt(j)
+//         for(let str of input){
+//             if(str.startsWith(tempChar)) countChar[tempChar] = (countChar[tempChar] || 0 ) + 1
+//         } 
+//     }
+// }
+
+// var output = {
+//     outstr:'',
+//     count:0
+// }
+// console.log(countChar)
+// for(let str in countChar){
+//     console.log(countChar[str])
+//     if(output.count < countChar[str] || output.count == countChar[str]) {
+//         output.count = countChar[str]
+//         output.outstr = str
+//     }
+    
+// }
 
 
 // console.log("Input : ",input)
-// console.log("Output : ",output)
+// console.log("Output : ",output.outstr)
+
+
+
+/*
+///chatGPT answer
+
+// Find Longest Common Prefix from Array of Strings
+// Input: ["google", "gosh", "google"]
+// Output: "go"
+
+const input = ["google", "gosh", "google", 'g'];
+
+function findLongestCommonPrefix(arr) {
+    if (!arr.length) return "";
+
+    // Start with the first string as the base prefix
+    let prefix = arr[0];
+
+    // Iterate over the remaining strings
+    for (let i = 1; i < arr.length; i++) {
+        while (arr[i].indexOf(prefix) !== 0) {
+            // Reduce prefix by removing the last character until it matches
+            prefix = prefix.slice(0, -1);
+            // If prefix becomes empty, return ''
+            if (!prefix) return "";
+        }
+    }
+    return prefix;
+}
+
+const output = findLongestCommonPrefix(input);
+
+console.log("Input :", input);
+console.log("Output :", output);
+*/
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
 
@@ -305,7 +365,39 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
 
-// console.log("Input : ", input)
+// 18. Character Occurrence in a String 
+// Input:  "priyapri", "p" 
+// Output:  2 
+
+// const input = "priyapri"
+// const inChar = 'p'
+// let output = 0
+
+// for (const char of input) {
+//     if(char==inChar) output++
+// }
+
+// console.log("Input : ", input, inChar)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 19.Find First Pair Whose Sum is Zero 
+// Input:  [-5, -4, -3, -2, 1, 2, 3, 4, 5] 
+// Output:  [-5, 5] 
+
+const input = [1, -4, -3, -2, 1, 2, 3, 4, 5] 
+
+console.log("Input : ", input)
+
+for (const val of input) {
+    if(input.includes(-val)) {
+        console.log("Output : ", [val, -val])
+        break
+    }
+}
+
+
 // console.log("Output : ",output)
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
