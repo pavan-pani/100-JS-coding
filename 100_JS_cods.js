@@ -386,18 +386,38 @@ console.log("Output :", output);
 // Input:  [-5, -4, -3, -2, 1, 2, 3, 4, 5] 
 // Output:  [-5, 5] 
 
+// const input = [1, -4, -3, -2, 1, 2, 3, 4, 5] 
+
+// console.log("Input : ", input)
+
+// for (const val of input) {
+//     if(input.includes(-val)) {
+//         console.log("Output : ", [val, -val])
+//         break
+//     }
+// }
+
+
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 20.Find First Pair Whose Sum is Zero Using Indexing 
+// Input:  [-5, -4, -3, -2, 0, 2, 4, 6] 
+// Output:  [-2, 2] 
+
 const input = [1, -4, -3, -2, 1, 2, 3, 4, 5] 
 
 console.log("Input : ", input)
 
 for (const val of input) {
     if(input.includes(-val)) {
-        console.log("Output : ", [val, -val])
+        console.log("Output : ", [input.indexOf(val), input.indexOf(-val)])
         break
     }
 }
 
-
+// console.log("Input : ", input, inChar)
 // console.log("Output : ",output)
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
