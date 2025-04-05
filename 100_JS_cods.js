@@ -406,18 +406,80 @@ console.log("Output :", output);
 // Input:  [-5, -4, -3, -2, 0, 2, 4, 6] 
 // Output:  [-2, 2] 
 
-const input = [1, -4, -3, -2, 1, 2, 3, 4, 5] 
+// const input = [1, -4, -3, -2, 1, 2, 3, 4, 5] 
 
-console.log("Input : ", input)
+// console.log("Input : ", input)
 
-for (const val of input) {
-    if(input.includes(-val)) {
-        console.log("Output : ", [input.indexOf(val), input.indexOf(-val)])
-        break
-    }
-}
+// for (const val of input) {
+//     if(input.includes(-val)) {
+//         console.log("Output : ", [input.indexOf(val), input.indexOf(-val)])
+//         break
+//     }
+// }
 
 // console.log("Input : ", input, inChar)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+
+// 21.Find Largest Pair Sum from Array with Unsorted Elements 
+// Input:  [9, 7, 8, 4, 5, 6, 1, 2, 3] 
+// Output:  17
+
+// const input = [9, 7, 8, 4, 5, 6, 1, 2, 3] 
+
+// let fristMax = -Infinity 
+// let secendMax = -Infinity 
+
+// for (let val of input) {
+//     if(val >  fristMax){
+//         secendMax = fristMax
+//         fristMax = val 
+//         console.log("If 1 : ", fristMax, secendMax, val)
+//     }
+//     else if(val > secendMax){
+//         secendMax = val
+//         console.log("If 2 : ", fristMax, secendMax, val)
+//     }
+// }
+
+
+// console.log("Input : ", input)
+// console.log("Output : ",fristMax + secendMax)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 24.Fibonacci Series (Print Series) 
+// Input:  5 
+// Output:  [0, 1, 1, 2, 3, 5] 
+// const input = 20
+
+// const output = []
+// for(let i=0; i < input;i++){
+//     if(i == 0 || i == 1) output.push(i)
+//     else output.push(output[output.length - 1] + output[output.length - 2])
+// }
+
+// console.log("Input : ", input)
+// console.log("Output : ",output)
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 26.Find Missing Elements in Array and Add to Existing Elements 
+// Input:  [1, 2, 5] 
+// Output:  [1, 2, 3, 4, 5, 6] 
+
+const input = [1, 2, 5]
+
+
+
+for (let i = 0; i < input.length; i++) {
+    const element = array[i];
+    
+}
+
+// console.log("Input : ", input)
 // console.log("Output : ",output)
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
