@@ -470,16 +470,45 @@ console.log("Output :", output);
 // Input:  [1, 2, 5] 
 // Output:  [1, 2, 3, 4, 5, 6] 
 
-const input = [1, 2, 5]
+// const input = [1, 2, 5];
+// const output = [];
+
+// for (let i = 0; i < input.length - 1; i++) {
+//   const start = input[i];
+//   const end = input[i + 1];
+
+//   for (let num = start; num < end; num++) {
+//     output.push(num);
+//   }
+// }
+// output.push(input[input.length - 1]);
+// output.push(input[input.length - 1] + 1);
+
+// console.log("Input :", input);
+// console.log("Output:", output);
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 27. Find Missing Number in Array 
+// Input:  [1, 2, 3, 4, 5, 6, 7, 8, 10] 
+// Output:  9
+// const input = [1, 2, 3, 5, 6, 7, 8, 10]
 
-for (let i = 0; i < input.length; i++) {
-    const element = array[i];
-    
-}
+// for(let i=0;i<input.length -1; i++){
+//     if(input[i] != input[i+1] -1) console.log("Output:", input[i]+1)
+// }
 
-// console.log("Input : ", input)
-// console.log("Output : ",output)
+
+// console.log("Input :", input);
+// console.log("Output:", input.reduce((acc, val, index)=>{
+//     if(acc + 1 != val) return acc
+//     return val
+// },0));
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// console.log("Input :", input);
+// console.log("Output:", output);
+
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
