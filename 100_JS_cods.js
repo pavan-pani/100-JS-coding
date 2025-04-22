@@ -507,8 +507,79 @@ console.log("Output :", output);
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
+// 28,Sort String or Character Array 
+// Input:  ['d', 'g', 'y', 'e', 'r', 'p'] 
+// Output:  ['d', 'e', 'g', 'p', 'r', 'y']
+
+// let input = ['d', 'g', 'y', 'e', 'r', 'p'] 
+
+// console.log("Output : ", input.sort())
+// console.log(input[0]===input[1])
+
 // console.log("Input :", input);
 // console.log("Output:", output);
 
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 29.  Sort Numbers in Array 
+// Input:  [1, 23, 34, 2, 76, 78] 
+// Output:  [1, 2, 23, 34, 76, 78] 
+
+// var input = [1, 23, 34, 2, 76, 78] 
+
+// let temp;
+// for(let i=0;i<input.length -1; i++){
+//     for(let j=0;j<input.length -1;j++){
+//         if(input[j]>input[j+1]){
+//             let temp = input[j]
+//             input[j] = input[j+1]
+//             input[j+1] = temp
+//         }
+//     }
+// }
+
+// // console.log("Input :", input);
+// console.log("Output:", input);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+
+// 30.  Check if Number is Prime 
+// Input:  17 
+// Output:  True
+// let input = 17
+// var output = true
+
+// for(let i = 2; i < input; i++){
+//     if(input%i == 0){
+//         output = false
+//         break
+//     }
+// }
+// console.log("Input :", input);
+// console.log("Output:", output);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 31.  Print All Prime Numbers from 2 to 100 
+// Input:  100 
+// Output:  2, 3, 5, 7, 11, 13, ..., 97 
+
+function isPrime(num){
+    // if(num < 2) return false
+    for(let i = 2; i < num; i++){
+        if(num % i === 0){
+            return false
+        }
+    }
+    return true
+}
+let output = []
+
+for(let a=2;a<=100;a++){
+    if(isPrime(a)){
+        output.push(a)
+    }
+}
+// console.log("Input :", input);
+console.log("Output:", output);
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
