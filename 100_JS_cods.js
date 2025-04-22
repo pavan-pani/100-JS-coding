@@ -563,23 +563,68 @@ console.log("Output :", output);
 // Input:  100 
 // Output:  2, 3, 5, 7, 11, 13, ..., 97 
 
-function isPrime(num){
-    // if(num < 2) return false
-    for(let i = 2; i < num; i++){
-        if(num % i === 0){
-            return false
-        }
-    }
-    return true
-}
-let output = []
+// function isPrime(num){
+//     // if(num < 2) return false
+//     for(let i = 2; i < num; i++){
+//         if(num % i === 0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// let output = []
 
-for(let a=2;a<=100;a++){
-    if(isPrime(a)){
-        output.push(a)
-    }
-}
+// for(let a=2;a<=100;a++){
+//     if(isPrime(a)){
+//         output.push(a)
+//     }
+// }
 // console.log("Input :", input);
-console.log("Output:", output);
+// console.log("Output:", output);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 32.  Find Unique Values from Two Arrays and Merge 
+// Input:  [1, 2, 3, 4, 4], [2, 3, 4, 5, 6] 
+// Output:  [1, 2, 3, 4, 5, 6] 
+
+let input1 = [1, 2, 3, 4, 4]
+let input2 = [2, 3, 4, 5, 6] 
+
+//using set
+// console.log([...new Set([...input1, ...input2])])
+
+// //without set
+// let input =[...input1, ...input2]
+// let output = []
+
+// for(let i=0;i<input.length;i++){
+//     if(!output.includes(input[i])) output.push(input[i])
+// }
+
+// console.log("Input :", input);
+// console.log("Output:", output);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 33.  Find First Duplicate Element in Array 
+// Input:  [1, 2, 2, 5, 5] 
+// Output:  2 
+
+// let input = [1, 2, 2, 5, 5] 
+// for(let i=0;i<input.length;i++){
+//     if(input.indexOf(input[i]) != i){
+//         console.log(input[i])
+//     }
+// }
+
+// console.log("Input :", input);
+// console.log("Output:", output);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 34.  FizzBuzz Problem 
+// Input:  20 
+// Output:  1, 2, Fizz, 4, Buzz, Fizz, ..., 14, FizzBuzz, 16, 17, Fizz, 19, Buzz 
+
+// console.log("Input :", input);
+// console.log("Output:", output);
 
 // ---------------------------------------------------------------------------------------------------------------------------------//
