@@ -624,6 +624,44 @@ let input2 = [2, 3, 4, 5, 6]
 // Input:  20 
 // Output:  1, 2, Fizz, 4, Buzz, Fizz, ..., 14, FizzBuzz, 16, 17, Fizz, 19, Buzz 
 
+// const input = 20
+// let output = []
+
+// for(let i=1;i<=20;i++){
+//     if(i%3 == 0 && i%5==0) output.push('FizzBuzz') 
+//     else if(i%3 == 0) output.push('Fizz')
+//     else if(i%5==0) output.push('Buzz')
+//     else output.push(i)    
+// }
+
+// console.log("Input :", input);
+// console.log("Output:", output);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 35.  Uppercase First Letter of Each Word 
+// Input:  "india is my country" 
+// Output:  "India Is My Country" 
+
+// let str = "india is my country" 
+// console.log("Output:", str.split(" ").map((word)=>{
+//         let out = word.split('')
+//         out[0] = out[0].toUpperCase() 
+//         return out.join('')
+//     }).join(' ')
+// );
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
+// 38.  Check String Ending with Given Character(s) Using substr() 
+// Input:  "priya", "a" 
+// Output:  true 
+
+// let str = "priya"
+// let check = 'i'
+
+// console.log("Input :", input);
+// console.log("Output:", str.substring(str.lastIndexOf(check)) == check);
+
+// ---------------------------------------------------------------------------------------------------------------------------------//
 // console.log("Input :", input);
 // console.log("Output:", output);
 
